@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Translation - About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .transition-fade {
+            transition: 0.4s;
+            opacity: 1;
+        }
+        html.is-animating .transition-fade {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div id="swup" class="transition-fade">
+        <header class="bg-blue-600 text-white shadow-lg">
+            <div class="container mx-auto px-4 py-6">
+                <h1 class="text-3xl font-bold">Bible Translation</h1>
+                <nav class="mt-4">
+                    <ul class="flex space-x-4">
+                        <li><a href="index.html" class="hover:text-blue-200">Home</a></li>
+                        <li><a href="about.html" class="hover:text-blue-200 border-b-2 border-white">About Us</a></li>
+                        <li><a href="projects.html" class="hover:text-blue-200">Projects</a></li>
+                        <li><a href="donate.html" class="hover:text-blue-200">Donate</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="container mx-auto px-4 py-8">
+            <h2 class="text-2xl font-bold mb-4">About Us</h2>
+            <p class="mb-4">We are a dedicated team of linguists, translators, and volunteers committed to bringing the Bible to every language group around the world.</p>
+            <p>Our mission is to ensure that everyone has access to God's Word in their heart language, promoting understanding and spiritual growth.</p>
+        </main>
+        <footer class="bg-blue-600 text-white py-4">
+            <div class="container mx-auto px-4 text-center">
+                <p>&copy; 2023 Bible Translation. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script>
+        const swup = new Swup();
+    </script>
+</body>
+</html>
